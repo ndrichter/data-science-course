@@ -54,4 +54,7 @@
   - Optimization algorithm: gradient descent, good for large dataset
 
 ## Non-Linear Regression
+- Different types, called polynomial regressions. This includes quadratic, cubic, exponential, and logarithmic
+- Fits a curved line to your data
+- Can be transformed into linear regression model
 - 
