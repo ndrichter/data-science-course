@@ -58,3 +58,51 @@
 - Information gain
   - Information that can increase the level of certainty after splitting
   - Information gain = (entropy before split) - (weighted entropy after split)
+
+## Intro to Logistic Regression
+- Classification algorithm for categorical variables
+- Predicts binary variable as opposed to numerical value like linear regression
+- When is it suitable?
+  - If your data is binary (0/1, yes/no, etc.)
+  - If you need probabilistic results
+  - When you need a linear decision boundary
+  - Need to understand impact of a feature
+
+## Logistic Regression vs Linear Regression
+- Linear regression can't properly measure the probability of a case belonging to a class
+- Sigmoid function used in logistic regression
+- Sigmoid function output always between 0 and 1
+
+## Logistic Regression Training
+- Aim to reduce cost (error)
+- Find minimum point of cost function to determine parameters of the model
+- Using gradient descent to minimize the cost function
+  - Use the derivative of a cost function to change the parameter values, in order to minimize cost
+- Training steps
+  - Initialize parameters randomly
+  - Feed the cost function with training set, and calculate the error
+  - Calculate the gradient of cost function
+  - Update weights with new values
+  - Back to step 2 until cost is small enough
+  - Predict the new class
+
+## Support Vector Machine
+- Supervised algorithm that classifies cases by finding a separator
+- Mapping data to a high-dimensional feature space, then finding a separator
+- Outputs an optimal hyperplane that categorizes new examples
+- Mapping data into a higher-dimensional spaced is called kernelling
+- Goal is to find hyperplane with biggest margin as possible
+- Advantages:
+  - Accurate in high-dimensional spaces
+  - Memory efficient
+- Disadvantages
+  - Prone to overfitting
+  - No probability estimation
+  - Smaller datasets
+- Applications
+  - Image recognition
+  - Text category assignment
+  - Detecting space
+  - Sentiment analysis
+  - Gene expression classification
+  - Not just used for classification: regression, outlier detection and clustering
