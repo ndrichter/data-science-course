@@ -1,0 +1,45 @@
+# Clustering
+## Intro to Clustering
+- Finding clusters in a dataset unsupervised
+- What is a cluster?
+  - Group of objects that are similar to other objects in the cluster, and dissimilar to data points in other clusters
+- Clustering vs classification
+  - Classification uses labeled datasets and process is supervised
+- Applications
+  - Marketing/Retail: identify buying patterns, recommendations
+  - Banking: fraud detection, clusters of customers
+  - Insurance: fraud detection in claims analysis, insurance risk of customers
+  - Publication: auto categorize news, recommend similar articles
+  - Medicine: categorize patient behavior
+  - Biology: group genes with similar expression patterns
+- Why use it?
+  - Exploratory data analysis
+  - Summary generation
+  - Outlier detection
+  - Finding duplicates
+  - Pre-processing step
+- Algorithms
+  - Partitioned based
+  - Hierarchical
+  - Density based
+
+## Intro to k-Means
+- Partitioning clustering
+  - Divides the data into non-overlapping subsets (clusters) without any cluster-internal structure
+- Unsupervised
+- Determining similarity or dissimilarity
+  - Intra-cluster distances are minimized (similar)
+  - Inter-cluster distances are maximized (dissimilar)
+- Need to initialize k (number of centroids) randomly
+- Measure Euclidean (can use other types) distance from centroid points
+- Assign each point to closest centroid
+- Compute new centroids for each cluster to determine position
+- Repeat until there are no more changes (iterative process)
+- Accuracy
+  - External approach: compare clusters with the ground truth if it's available
+  - Internal approach: average distance between data points within a cluster
+- Choosing k
+  - Often ambiguous because it's very dependent on the shape and scale of the distribution points in a dataset
+  - Increasing k will always decrease the error
+  - The value of the of metric as a function of k is plotted and the elbow point is determined where the rate of decrease sharply shifts
+    - Called the elbow method
